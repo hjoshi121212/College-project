@@ -1,0 +1,450 @@
+@import url('https://fonts.googleapis.com/css2?family=Martel+Sans:wght@600&family=Poppins:wght@700&display=swap');
+
+*{
+	margin: 0;
+	padding: 0;
+	font-family: 
+
+}
+body{
+	background-color: black;
+}
+
+.main{
+	background: center center;
+	background-image: url(bg.jpg);
+	background-repeat:no-repeat ;
+	height: 80vh;
+	position: relative;
+	background-size: max(1200px,100vw);
+}
+.main .box{
+	height: 70vh;
+	widows: 100%;
+	opacity: 0.99;
+	position: absolute;
+	top: 0;
+	background-color: black;
+}
+nav{
+	max-width: 60vw;
+	margin: auto;
+	justify-content: space-between;
+	display: flex;
+	align-items: center;
+	height: 62px;
+}
+nav img{
+	color: red;
+	width: 130px;
+	position: relative;
+	z-index: 10;
+}
+nav button{
+	position: relative;
+	z-index: 10;
+
+}
+
+.hero{
+	height: calc(100% - 62px);
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	flex-direction: column;
+	color: white;
+	position: relative;
+	font-family: 'Martel Sans', sans-serif;
+	gap: 20px;
+	padding: 0 30px;
+}
+
+.s1{
+	font-family: 'Poppins', sans-serif;
+
+	font-weight:bolder;
+	font-size: 48px;
+	text-align: center;
+}
+.s2{
+	font-weight: 400;
+	font-size: 24px;
+	text-align: center;
+}
+
+.s3{
+	font-weight: 400;
+	font-size: 20px;
+	text-align: center;
+}
+
+ .seperate{
+ 	position: relative;
+ 	z-index: 20;
+ 	height: 4px;
+ 	background-color: rgb(46, 44, 44);
+ }
+
+.btn{
+	padding: 3px 8px;
+	font-weight:400;
+	background-color: rgba(248, 243, 243, 0.021);
+	color: white;
+	border: solid 1px white;
+	border-radius: 4px;
+	cursor: pointer;
+}
+
+.btn-red{
+      background-color: red;
+      color: white;
+      padding: 3px 24px;
+      font-size: 20px;
+      border-radius: 4px;
+      font-weight: 400;
+}
+.btn-red-sm{
+   background-color: red;
+   color: white;
+}
+.main input{
+	padding: 7px 101px 8px 14px;
+	font-size: 12px;
+	border-radius: 4px;
+	background-color: rgba(23, 23, 23, 0.7);
+	border: solid 1px rgba(246, 238, 238, 0.5);
+	color: white;
+}
+
+.hero-buttons{
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	gap: 10px;
+     flex-wrap: wrap;
+}
+ 
+
+.first{
+	display: flex;
+	justify-content: center;
+	max-width: 70vw;
+	margin: auto;
+	color: white;
+	justify-content: center;
+	align-items: center;
+ 
+}
+ @media screen and (max-width:500px){
+ 	  .first{
+ 	  	 flex-wrap: wrap;
+ 	  }
+ }
+.secImg{
+	position: relative;
+}
+
+.secImg img{
+	width: 555px;
+	position: relative;
+	z-index: 10;
+
+	
+}
+.secImg video{
+
+	margin: auto;
+     position:absolute;
+     top:51px;
+     right:0;
+}
+section.first > div{
+	display: flex;
+	flex-direction: column;
+}
+
+section.first > div :nth-child(1){
+	font-family: 'Poppins', sans-serif;
+	font-size: 48px;
+	font-weight: bolder;
+}
+
+section.first > div :nth-child(2){
+	font-family: 'Poppins', sans-serif;
+	font-size: 20px;
+	font-weight: bolder;
+}
+
+.faq h2{
+	font-family: 'Poppins', sans-serif;
+	text-align: center;
+	font-size: 48px;
+}
+.faq{
+	background-color: black;
+	color: white;
+	padding: 34px;
+}
+
+.faqbox{
+	font-size: 20px;
+	cursor: pointer;
+	display: flex;
+	background-color:grey;
+	justify-content: space-between;
+	padding: 20px;
+	max-width: 60vw;
+	margin:  10px auto;
+}
+
+.faqbox:hover{
+	background-color:#414141;
+}
+.faqbox svg{
+	filter: invert(1);
+}
+
+footer{
+	color: white;
+	max-width: 60vw;
+	margin: auto;
+	padding: 14px;
+}
+footer .questions{
+	padding: 34px 0;
+}
+
+.footer {
+	display: grid;
+	grid-template-columns: 1fr 1fr 1fr 1fr;
+	color: white;
+	
+}
+@media screen and (max-width: 500px){
+	 nav{
+	 	max-width: 90vw;
+	 }
+
+	.first{
+		flex-wrap: wrap;
+	}
+	.secImg img{
+		width: 305px;
+	}
+	.secImg video{
+		width: 305px;
+	}
+
+	.s1{
+	
+	font-size: 32px;
+      }
+
+      .s2{
+	
+	font-size: 18px;
+      }
+
+      .s3{
+	
+	font-size: 18px;
+      }
+
+      .faq h2{
+      	text-align: center;
+      	font-size: 32px;
+      }
+
+      footer{
+      	max-width: 90vw;
+      }
+      .footer-item{
+      	align-items: center;
+      }
+}
+
+
+@media footer and (max-width: 400px){
+	.footer{
+		display: grid;
+		grid-template-columns: 1fr 1fr;
+	}
+}
+
+.footer-item{
+	display: flex;
+	flex-direction: column;
+	gap: 23px;
+}
+.footer-item a{
+	color: white;
+	font-size: 14px;
+}
+
+
+
+
+/* sign In  page */
+.main1{
+	background: center center;
+	background-image: url(bg.jpg);
+	background-repeat:no-repeat ;
+	height: 100vh;
+	position: relative;
+	background-size: max(1200px,100vw);
+}
+
+#nav{
+
+	max-width: 70vw;
+	margin: auto;
+	justify-content: space-between;
+	display: flex;
+	align-items: center;
+	height: 62px;
+	
+}
+#nav #a .img{
+	position: fixed;
+	color: red;
+	width: 130px;
+	position: relative;
+	z-index: 20;
+}
+.form{
+	position: absolute;
+	left: 50%;
+	top: 53%;
+	width: 430px;
+	padding: 50px;
+	border-radius: 4px;
+	background: rgba(0, 0, 0, 0.7);
+   transform: translate(-50%, -50%);
+}
+
+.form #si{
+	font-family: 'Poppins', sans-serif;
+	color: white;
+	font-size: 2rem;
+}
+.form form{
+	margin: 25px 0 65px;
+}
+
+form .form-control{
+	position: relative;
+	height: 50px;
+	margin-bottom: 15px;
+}
+.form-control .text{
+	height: 100%;
+	width: 90%;
+	background: #333;
+	outline: none;
+	border: none;
+	color: white;
+	font-size: 0.9rem;
+	border-radius: 4px;
+	padding: 0 20px;
+}
+
+.form-control .text:is(:focus, :valid){
+	padding: 10px 20px 0;
+	background: #444;
+}
+.form-control label{
+	position:absolute ;
+	color: #8c8c8c;
+	left: 20px;
+	top: 50%;
+	pointer-events: none;
+	font-size: 1rem;
+	transform: translateY(-50%);
+	transition: all 0.1s ease;
+}
+.form-control .text:is(:focus, :valid) ~ label{
+	font-size: 0.77rem;
+	transform: translateY(-130%);
+}
+
+form .btnbtn{
+	width: 100%;
+	padding: 15px 0;
+	font-size: 1rem;
+	background: red;
+	border: none;
+	outline: none;
+	color: white;
+	font-weight: 500;
+	border-radius: 4px;
+	cursor: pointer;
+	margin: 25px 0 10px;
+    transition: 0.1s ease;
+}
+
+form .btnbtn:hover{
+	background: #c40812;
+}
+
+form .form-help{
+	display: flex;
+	justify-content: space-between;
+}
+
+form .remember-me .rm{
+	margin-right: 5px;
+	accent-color: #b3b3b3;
+}
+form .remember-me {
+	display: flex;
+}
+form .form-help :where(label , a){
+	font-size: 0.9rem;
+}
+
+.form :where(label, p, small , a){
+	color: #b3b3b3;
+}
+
+.form p a{
+	color: white;
+}
+.form small{
+	display: block;
+	margin-top: 15px;
+}
+.form small a{
+	color: #0071eb;
+}
+
+.form a{
+	text-decoration: none;
+}
+
+.form a:hover{
+	text-decoration:underline;
+}
+
+@media (max-width:600px){
+	  .main1{
+	  	background: black;
+	  	margin-left: 20px;
+	  }
+
+	  #nav , .form{
+	  	padding: 20px;
+	  }
+	  #nav #a .img{
+	  	width: 140px;
+	  }
+
+	  .form{
+	  	top: 43%;
+	  	width: 100%;
+	  }
+
+	  .form form{
+	  	margin: 25px 0 40px;
+	  }
+}
+
